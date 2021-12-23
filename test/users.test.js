@@ -28,7 +28,7 @@ describe("Backend CRUD", ()=>{
         })
         .catch(err=>err)
     })
-/*     it('GET a non-existent user', ()=>{
+    it('GET a non-existent user', ()=>{
         return request(app)
         .get("/users/618db856bbfc8fd9b6cf321f")
         .expect(404, {"message":"Not Found"});
@@ -78,5 +78,5 @@ describe("Backend CRUD", ()=>{
         .then(resp=>{
             assert.typeOf( resp.body, 'array', 'response non is a array' );
         })
-    });*/
+    });
 });
